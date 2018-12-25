@@ -3,17 +3,15 @@ def test_example():
 
     @datadispatch(lambda args, _: args[0].get('type'))
     def handle(message):
-      return ':('
-
+        return ':('
 
     @handle.register('ping')
     def _(message):
-      return 'you sent ping'
-
+        return 'you sent ping'
 
     @handle.register('pong')
     def _(message):
-      return 'you sent pong'
+        return 'you sent pong'
 
     assert handle({'type': 'hello', 'payload': 'hello'}) == ':('
     assert handle({}) == ':('

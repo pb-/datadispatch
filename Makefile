@@ -2,7 +2,7 @@ all: lint test
 .PHONY: all
 
 lint:
-	pipenv run flake8 tasks
+	pipenv run flake8 datadispatch
 	pipenv run isort -c
 .PHONY: lint
 
