@@ -28,3 +28,11 @@ print(handle(
   {'type': 'ping', 'payload': 'hello'}
 ))
 ```
+
+## Real-life examples
+
+ * [Message dispatch in a game server](https://github.com/pb-/set/blob/d6b742ffa50eed977523e49908c2dd4529e746e3/backend/set/game.py#L26)
+ * In a todo-item manager
+   * [Parsing user-input commands](https://github.com/pb-/tasks/blob/8985f55eff93f7ce63e357e4793f4b034fe0cfd5/tasks/parse.py#L16)
+   * [Dispatching events](https://github.com/pb-/tasks/blob/8985f55eff93f7ce63e357e4793f4b034fe0cfd5/tasks/update.py#L32)
+   * [Dispatching run-time commands](https://github.com/pb-/tasks/blob/8985f55eff93f7ce63e357e4793f4b034fe0cfd5/tasks/main.py#L71)
